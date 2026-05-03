@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { CARDS } from './lib/cards';
-import { SLOTS, canPlace, emptyBoard, BoardState, SlotId, ADJACENCIES, slotLabel } from './lib/board';
-import { calculateScore, getLinkClass } from './lib/scoring';
+import { CARDS } from './cards';
+import { SLOTS, canPlace, emptyBoard, BoardState, SlotId, ADJACENCIES, slotLabel } from './board';
+import { calculateScore, getLinkClass } from './scoring';
 import './styles.css';
 
 function drawChoices(round: number, usedIds: Set<string>) {
